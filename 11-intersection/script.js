@@ -7,9 +7,26 @@
  * 
 */
 
+
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+
+    const result = arr1.filter(function (element) {
+        return (arr2.indexOf(element) !== -1);
+    });
+
+    const finalArray = [];
+
+    
+    for (let i = 0; i < result.length; i++) {
+        if (!finalArray.includes(result[i])) {
+            finalArray.push(result[i]);
+        }        
+    }
+    return finalArray;
 }
+
+
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

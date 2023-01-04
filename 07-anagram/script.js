@@ -8,11 +8,26 @@
  * 
 */
 
+
 function anagram(str1, str2) {
-    // Напишите код здесь
+    if ((str1.length === str2.length) && (str1.toLowerCase() !== str2.toLowerCase())) {
+        const array1 = str1.toLowerCase().split('');
+        const array2 = str2.toLowerCase().split('');
+
+        const str1Sorted = array1.sort().join('');
+        const str2Sorted = array2.sort().join('');
+
+        return str1Sorted === str2Sorted;
+    } else {
+        return false;
+    }
 }
+
+console.log(anagram('up', 'UP'));
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(anagram('finder', 'Friend')); // true
 console.log(anagram('hello', 'bye')); // false
+

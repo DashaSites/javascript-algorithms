@@ -6,10 +6,19 @@
  *
 */
 
-function capitalize(str) {
-    // Напишите код здесь
+function capitalize(string) {
+
+    let array = string.split(' ');
+
+    
+    for (let i = 0; i < array.length; i++) {
+      
+      if ((!array[i]) || (array[i] === ' ') || (array[i].endsWith(' '))) continue;
+      
+      array[i] = array[i][0].toUpperCase() + array[i].substr(1); 
+    }
+
+    return array.join(' ');
 }
 
-// Протестируйте решение, вызывая функцию с разными аргументами:
-
-console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
+console.log(capitalize('(and somtig'));
