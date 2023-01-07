@@ -48,7 +48,7 @@ function primes(num) {
     if (primeTest === true){
         arrayFinal.push(i);
     }
-    }
+  }
     
     return arrayFinal;
 }
