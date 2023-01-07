@@ -29,32 +29,30 @@
 
 
 
-/*
+
 
 function primes(num) {
 
     let primeTest;
     const arrayFinal = [];
 
-    for (let i = 2; i < num; i++) {
+    for (let i = 2; i <= num; i++) {
         primeTest = true;
 
-        for (let i2 = 2; i2 < i; i2++) {
-            
-            if (i % i2 === 0){
-                console.log(i2)
+        for (let i2 = 2; i2 < i; i2++) { 
+            if (i % i2 === 0) {
                 primeTest = false;
                 break;
             }
         }
-
-        if (primeTest = true){
-            arrayFinal.push(i);
-        }
+    if (primeTest === true){
+        arrayFinal.push(i);
     }
+    }
+    
     return arrayFinal;
 }
-*/
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
