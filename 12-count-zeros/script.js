@@ -7,8 +7,25 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
+  const array = [];
+
+    for (let i = 10; i <= n; i++) {
+        array.push(i);
+    }
+
+  const arrayModified = array.join('').split('');
+
+  let result = 0; 
+
+  for (let i = 0; i < arrayModified.length; i++) {
+    if (arrayModified[i] === '0') {
+     result++;
+    }
+  }
+  return result;
 }
+
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

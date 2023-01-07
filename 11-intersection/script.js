@@ -25,6 +25,8 @@ function intersection(arr1, arr2) {
     return finalArray;
 }
 
+console.log(intersection([1, 3, 3, 5, 7], [3, 3, 7, 8 ,9]));
+
 
 
 
